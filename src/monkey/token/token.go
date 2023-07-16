@@ -7,7 +7,7 @@ const (
 	EOF     = "EOF" // end of file.
 
 	// Identifiers + literals
-	IDENT = "IDENT" // add, foobar, x, y, ...
+	IDENT = "IDENT" // add, foobar, x, y, ... TokenType for all user-defined identifiers.
 	INT   = "INT"   // 1343456
 
 	// Operators
