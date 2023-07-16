@@ -3,8 +3,8 @@ package token
 type TokenType string
 
 const (
-	ILLEGAL = "ILLEGAL"
-	EOF     = "EOF"
+	ILLEGAL = "ILLEGAL" // a a token/character we don't know about.
+	EOF     = "EOF" // end of file.
 
 	// Identifiers + literals
 	IDENT = "IDENT" // add, foobar, x, y, ...
