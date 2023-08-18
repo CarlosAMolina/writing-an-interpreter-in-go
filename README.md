@@ -44,6 +44,19 @@ The tokens are sent to the parser.
 
 Converts tokens into an `Abstract Syntax Tree`.
 
+### REPL
+
+REPL = Read Eval Print Loop.
+
+Other names that REPL receives: console or interactive mode.
+
+What REPL does:
+
+1. Read input.
+2. Send input to the interpreter to be evaluated.
+3. Print the result.
+4. Repeat the steps.
+
 ## Rerources
 
 Book's URL: 
