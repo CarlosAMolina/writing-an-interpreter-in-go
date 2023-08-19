@@ -6,6 +6,23 @@ In this project I run the code of the Thorsten Ball's book Writing An Interprete
 
 - Go >= 1.13 (recommended).
 
+## Run
+
+### Tests
+
+```bash
+cd src/monkey/
+go test ./lexer
+```
+
+### REPL
+
+```bash
+cd src/monkey/
+go run main.go
+# >> let add = fn(x, y) { x + y; };
+```
+
 ## Theory
 
 ### Lexer
