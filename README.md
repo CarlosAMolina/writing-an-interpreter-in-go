@@ -59,7 +59,63 @@ The tokens are sent to the parser.
 
 ### Parser
 
-Converts tokens into an `Abstract Syntax Tree`.
+#### Parser. What is it?
+
+Converts the source code input (input as text or tokens) into a data structure that represents the input, normally called `syntax tree` or `Abstract Syntax Tree` (AST).
+
+The AST format changes between program languages.
+
+Parser is also called `syntactic analysis` because while building up the data structure, the input is analyzed to check that respects the expected structure.
+
+#### Parser strategies
+
+There are two main parser strategies:
+
+- Top down parser: first the root node fo the AST is constructed and then descends.
+- Bottom up parser: the opposite of the previous one.
+
+#### Statements
+
+A program is formed by statements.
+
+Example of 2 let statements:
+
+```bash
+let x = 10;
+let add = fn (a, b) {
+    return a + b
+}
+```
+
+Let statements bind a value to a given name. Their form is:
+
+```bash
+let <identifier> = <expression>
+```
+
+##### Statement VS expression
+
+- Expression: produces values. Example:
+
+    ```bash
+    5
+    ```
+
+    ```bash
+     add (5,5)
+    ```
+
+- Statement: does not produces values. Example:
+
+    ```bash
+    let x = 5
+    ```
+
+    ```bash
+    return 5
+    ```
+
+What is an expression or an statement depends on the programming language as some programs allow to use function literals in places where any expression is allowed and other languages no.
 
 ### REPL
 
